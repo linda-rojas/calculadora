@@ -1,0 +1,134 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #E9FF97;
+    font-family: cursive;
+    margin: 0;
+}
+
+.inactive {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #FFA38F;
+    font-size: x-large;
+}
+
+#aside-split-operation {
+    display: flex;
+    justify-content: center;
+}
+
+.selectOperation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.sectionSelectOperationBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+}
+
+.sectionSelectOperationBtn>* {
+    background-color: #FFD18E;
+    font-family: cursive;
+    font-size: xx-large;
+    border-radius: 1rem;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.sectionSelectOperationBtn>*:hover {
+    transform: scale(1.2);
+}
+
+#form-operation {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    text-align: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+}
+
+#button-closed,
+#paragraph-result,
+#btn-result,
+#input-2,
+#input-1 {
+    border: none;
+    border-radius: 0.2rem;
+    width: 200px;
+    height: 40px;
+    outline: none;
+    padding-left: 15px;
+    font-family: inherit;
+    font-size: inherit;
+    color: #C5705D;
+}
+
+#input-1::placeholder,
+#input-2::placeholder {
+    padding: 10px;
+    color: #C5705D;
+    font-family: cursive;
+    font-size: large;
+}
+
+#input-2:focus::placeholder,
+#input-1:focus::placeholder {
+    color: transparent;
+}
+
+#button-closed,
+#btn-result {
+    color: #E9FF97;
+    background-color: #FF7EE2;
+    width: 7rem;
+    cursor: pointer;
+}
+
+#button-closed:hover,
+#btn-result:hover {
+    transform: scale(1.1);
+}
+
+#paragraph-result {
+    margin: 0;
+    padding: 0;
+}
+
+#div-button-closed {
+    display: flex;
+    justify-content: end;
+}
+
+#button-closed {
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+}
+
+.processOperation {
+    margin-top: 5rem;
+}
